@@ -359,7 +359,7 @@ jobs:
       with:
         fetch-depth: 0
     - run: rustup update nightly && rustup default nightly
-    - uses: actions/download-artifact@v2
+    - uses: actions/download-artifact@v4.1.7
       with:
         path: artifacts
     - run: find artifacts
